@@ -26,5 +26,4 @@ Follow The
 Link :- https://waqasali-cs.github.io/CSS-Chair/
 
 
-https://github.com/waqasali-cs/CSS-Chair/blob/main/screen-capture.webm
-
+[screen-capture.webm](https://github.com/waqasali-cs/CSS-Chair/assets/140514512/85331d98-7fb8-4e13-b239-83e28c211ada)
