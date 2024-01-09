@@ -26,4 +26,4 @@ Follow The
 Link :- <a targer=_blank href='https://waqasali-cs.github.io/CSS-Chair/ '> LIVE PREVIEW </a>
 
 
-[screen-capture.webm](https://github.com/waqasali-cs/CSS-Chair/assets/140514512/85331d98-7fb8-4e13-b239-83e28c211ada)
+![CPT2401091601-500x253](https://github.com/waqasali-cs/CSS-Chair/assets/140514512/f4a87440-ad97-4c2f-84b5-a35428ddc532)
