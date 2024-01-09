@@ -23,7 +23,7 @@ The Modern Chair project is a demonstration of contemporary web design principle
 ## How to Use
 
 Follow The 
-Link :- https://waqasali-cs.github.io/CSS-Chair/
+Link :- <a targer=__blank href='https://waqasali-cs.github.io/CSS-Chair/ '> LIVE PREVIEW </a>
 
 
 [screen-capture.webm](https://github.com/waqasali-cs/CSS-Chair/assets/140514512/85331d98-7fb8-4e13-b239-83e28c211ada)
