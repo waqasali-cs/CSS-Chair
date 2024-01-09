@@ -1,0 +1,326 @@
+
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+ .section{
+  position: relative;
+  width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.section-info{
+  margin-left: 500px;
+  position: relative;
+  text-align: left;
+}
+
+.section-info--overview{
+  position: relative;
+  display: block;
+}
+
+[type='radio']:checked,
+[type='radio']:not(:checked){
+
+  position: absolute;
+  visibility: hidden;
+}
+
+.color-btn:checked +label,
+.color-btn:not(:checked)+label {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  transition: all 20ms linear ;
+  border: 3px solid transparent;
+  overflow: hidden;
+
+}
+
+.color-btn:checked +label{
+  border-color: aliceblue;
+  transform: scale(1.1);
+}
+
+label.color-first{
+  margin-left: 500px;
+  background-image: url('color1.jpg');
+}
+label.color-2{
+  background-image: url('color2.jpg');
+}
+label.color-3{
+  background-image: url('color3.jpg');
+}
+label.color-4{
+  background-image: url('color4.jpg');
+}
+label.color-5{
+  background-image: url('color5.jpg');
+}
+label.color-6{
+  background-image: url('color6.jpg');
+}
+
+
+.image-wrap{
+  height: 410px;
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  display: inline-block;
+  background-position: center top;
+  background-size: cover;
+  opacity: 0;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+}
+
+
+
+.for-color-1:checked ~ .image-wrap.chair-1{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  background-image: url('chair1.png');
+  opacity: 1;
+}
+
+.for-color-2:checked ~ .image-wrap.chair-2{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  background-image: url('chair2.png');
+  opacity: 1 ;
+}
+.for-color-3:checked ~ .image-wrap.chair-3{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  background-image: url('chair3.png');
+  opacity: 1;
+}
+.for-color-4:checked ~.image-wrap.chair-4{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  background-image: url('chair4.png');
+  opacity: 1;
+}
+.for-color-5:checked ~ .image-wrap.chair-5{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  background-image: url('chair5.png');
+  opacity: 1;
+}
+.for-color-6:checked ~.image-wrap.chair-6{
+  animation:  shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  background-image: url('chair6.png');
+  opacity: 1;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0) rotate(3deg);
+  }
+}
+
+
+.back-color{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -10;
+}
+
+.for-color-1:checked ~ .back-color.chair-1{
+  background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+}
+.for-color-2:checked ~ .back-color.chair-2{
+  background-image: linear-gradient(196deg, #4c4c4c, #262626);
+
+}
+.for-color-3:checked ~ .back-color.chair-3{
+  background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+
+}
+.for-color-4:checked ~ .back-color.chair-4{
+  background-image: linear-gradient(196deg, #97afc3, #6789a7);
+
+}
+.for-color-5:checked ~ .back-color.chair-5{
+  background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+
+}
+.for-color-6:checked ~ .back-color.chair-6{
+  background-image: linear-gradient(196deg, #aaadac, #838786);
+
+}
+
+h4 {
+  font-size:30px;
+  
+}
+
+h4 span{
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.description:checked +label,
+.description:not(:checked)+label{
+  position: relative; 
+  transition: all 200ms linear; /*Transition is for the hover opacity*/
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-right: 25px;
+  opacity: 0.5; 
+}
+
+.description:checked + label{
+  border-color: rgb(19, 118, 204);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.description:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.description-para, .detail-para{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  transition: all 250ms linear; 
+  opacity: 0; 
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.detail-para{
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+}
+
+
+#description:checked ~.description-para{
+  opacity: 1;
+  pointer-events: auto; /*jTo decide action events (like click and hover) behaviours using mouse pointer*/
+  transform: translateY(0);
+}
+#detail:checked ~.detail-para{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.dimension {
+  display: inline-block;
+  margin-right: 20px;
+}
+.dimension p span {
+  font-size: 30px;
+  line-height: 1.1; 
+}
+
+
+
+.btn {
+  position: relative;
+  height: 48px;
+  border-radius: 10px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent; 
+  box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15);
+  transition: all 550ms linear;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  border-radius: 10px;
+  background-color: #e66767;
+  transition: background-color 250ms 300ms ease;
+}
+
+
+.btn:hover {
+  box-shadow: 0 12px 35px 0 rgba(25, 148, 123, 0.25);
+  background-color: rgb(60, 155, 134); 
+}
+
+.for-color-1:checked ~ .section-info .btn:before{
+  background-color: rgb(238, 95, 85);
+}
+.for-color-2:checked ~ .section-info .btn:before{
+  background-color: rgb(86, 48, 45);
+}
+.for-color-3:checked ~ .section-info .btn:before{
+  background-color: rgb(57, 104, 161);
+}
+.for-color-4:checked ~ .section-info .btn:before{
+  background-color: rgb(85, 154, 238);
+}
+.for-color-5:checked ~ .section-info .btn:before{
+  background-color: rgb(96, 82, 81);
+}
+.for-color-6:checked ~ .section-info .btn:before{
+  background-color: rgb(142, 137, 136);
+} 
